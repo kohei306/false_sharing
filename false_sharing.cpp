@@ -8,13 +8,13 @@ const int NUM_THREADS = 1;
 const int NUM_ELEMENTS = 1000000;
 
 // Define a global array of integers
-int data[NUM_ELEMENTS];
+int g_data[NUM_ELEMENTS];
 
 // Define a function that increments the elements of the array
 void increment(int start, int end)
 {
     for (int i = start; i < end; ++i) {
-        data[i]++;
+        g_data[i]++;
     }
 }
 
